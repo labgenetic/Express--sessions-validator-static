@@ -1,0 +1,208 @@
+body{
+     margin: 0;
+     padding: 0;
+     background-color: beige;
+}
+header{
+     height: 90px;
+     background-color: white;
+     box-shadow: 0 4px 6px rgba(123, 42, 215, 0.279);
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     width: 100% ;
+     justify-items: space-between;
+}
+.biglist{
+     width: inherit;
+     justify-content: space-around;
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+.navigator{
+     color: rgb(33, 33, 60);
+     justify-content: space-around;
+     list-style: none;
+     display: flex;
+     gap: 20px;
+     font-weight: 500;
+     font-family: Arial, Helvetica, sans-serif;  
+}
+.logos{     
+     list-style: none;
+     display: flex;
+     gap: 15px;
+
+}
+.logo{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#user{
+     font-family: Arial, Helvetica, sans-serif;  
+    
+}
+#main{
+     padding-top: 100px;
+     padding-left:100px ;
+
+}
+#form{
+     display: flex;
+     flex-direction: column;
+     width: 180px;
+     height: 430px;
+     justify-content: space-evenly;
+}
+#btn{
+     cursor: pointer;
+     background-color: yellowgreen;
+     border: 0.5px solid black;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     border-radius: 10px;
+     color:white;
+     font-weight: 600;
+     font-family: system-ui, -apple-system, sans-serif;
+     transition: all 0.3s ease-in-out;
+}
+#input1,#input0,#input2,#input3,#input4{
+     border: solid black 1px;
+     font-size: 20px;
+     padding-top: 2px;
+     padding-bottom: 2px;
+     border-radius: 10px;
+}
+#input{
+     border: solid black 1px;
+     font-size: 15px;
+     padding-top: 2px;
+     padding-bottom: 2px;
+     border-radius: 10px;
+     width: 140px;
+}
+.titre{
+     font-family: Arial, Helvetica, sans-serif;  
+     color: white;
+     font-weight: bolder;
+     font-size: 30px;
+     align-self: start;
+}
+#table{
+     font-family: Arial, Helvetica, sans-serif;  
+     font-size: 20px;
+     width: 85%;
+     border-collapse: collapse;
+}
+#thLast,#thCity{
+     width: 150px;
+}
+#thId,#thSenior,#thAge{
+     width: 75px;
+}
+#errormsg{
+     background-color: red;
+     text-align: center;
+     padding: 9px;
+     border-radius: 10px;
+     color: white;
+     font-size: 20px;
+     font-weight: 600;
+}
+
+#thLast,#thAge,#thId,#thSenior,#thCity {
+     border: solid black 1px ;     
+     border-top: none;
+     padding: 10px;
+}
+#td,#tdid{
+     font-family: Arial, Helvetica, sans-serif;  
+     border: solid black 1px ;
+     padding: 5px;
+     border-bottom: none;
+}
+#tdstart{
+     border-top: solid black 1px ;
+}
+#thstart{
+     width: 150px;
+     font-family: Arial, Helvetica, sans-serif;  
+     border-bottom: none;
+     border-top: none;
+     padding: 5px;
+}
+#tbody{
+     border-collapse: collapse;
+}
+#container{
+     display: flex;
+     font-family: system-ui, -apple-system, sans-serif;  
+     gap: 80px;    
+}
+
+#btn:hover{
+     background-color: white;
+     color: black;
+     transform: scale(1.06);
+}
+#title{
+     font-family: system-ui, -apple-system, sans-serif ; 
+}
+#textcont{
+     height:150px;
+     display: flex;
+     flex-direction: column;
+}
+.delete-button{
+     padding-left: 20px;
+     border-top: 1px solid black;
+
+}
+
+.hiddenform{
+     position: absolute;
+     right: 50px;
+     background-color: lightgreen;
+     padding: 20px;
+     border-radius: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     justify-content: space-between;
+     height: 300px;
+
+}
+.editBtn{
+     transition: all 0.3s ease-in-out;
+     border-radius: 10px;
+     background-color: rgb(3, 193, 6);
+     color:white;
+     border: transparent 1px solid;
+     padding-top: 7.5px;
+     padding-bottom: 7.5px;
+}
+.editbtn{
+     padding-right: 80px;
+}
+.editBtn:hover{
+     cursor: pointer;
+     background-color: darkgreen;
+}
+.dlt{
+     transition: all 0.3s ease-in-out;
+     border-radius: 10px;
+     background-color: rgb(193, 3, 3);
+     color:white;
+     border: transparent 1px solid;
+     padding-top: 7.5px;
+     padding-bottom: 7.5px;
+}
+.dlt:hover{
+     cursor: pointer;
+     background-color: darkred;
+}
+.hidden{
+     display: none;
+}

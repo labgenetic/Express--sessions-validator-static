@@ -1,0 +1,33 @@
+
+
+doctype html
+html
+     head
+          title Register Page
+     
+block content
+     include ../public/index.html
+     body
+          main#main 
+               h1#title Create your Account
+               div#container
+                    div#textcont
+                         p FirstName:
+                         p LastName :
+                         P Age      :
+                         p Senior   :   
+                         p City     :
+                    form(action='/otherRoute', method='POST')#form
+                         input(type='name', id='input0', name='first', placeholder='First name', value='', required)          
+                         input(type='name', id='input1', name='last', placeholder='Last Name', value='', required)          
+                         input( id='input2', name='age', placeholder='Age', value='', required)          
+                         //- input(type='text', id='input3', name='senior', placeholder='Senior Subject', value='',required)
+                         select(name="senior" id='input3')
+                              option(value="Mern") Mern     
+                              option(value="JAVA") Java          
+                         select(name="city" id='input4')
+                              option(value="Rabat") Rabat     
+                              option(value="Casablanca") Casablanca 
+                         div#errormsg(class=stat ? '' : 'hidden') input error   
+                         button(type='submit', id='btn') Add Account
+                         input(type='reset',id='btn',value='Reset') 

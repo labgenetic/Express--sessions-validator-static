@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title Database Page
+  body
+    include ../public/index.html
+    main#main
+      table#table
+        thead#thead
+          tr#tr
+            th#thstart First Name
+            th#thLast Last Name
+            th#thId Id
+            th#thAge Age
+            th#thSenior Senior
+            th#thCity City
+            th#thend
+        tbody#tbody
+          each item in arr
+            tr#tr
+              td#tdstart= item.First
+              td#td= item.Last
+              td#tdid= item.Id
+              td#td= item.Age
+              td#td= item.Senior
+              td#td= item.City
+              td.delete-button
+                form(action=`/deleteItem/${item.Id}`, method='POST')
+                  button.dlt(type="delete") Delete
+              td.editbtn
+                button.editBtn(type="edit", data-item-id=item.Id) Update
+              td.editOptions( class=` hiddenform-${item.Id} `).hidden
+                form(action=`/updateItem/${item.Id}`, method='POST').hiddenform
+                  h1.titre Edit
+                  input(type='text', name='newFirst', placeholder='First name', value=item.First, required)#input
+                  input(type='text', name='newLast', placeholder='Last Name', value=item.Last, required)#input
+                  input(type='number', name='newAge', placeholder='Age', value=item.Age, required)#input
+                  select(name="newSenior")#input
+                    option(value="Mern", selected=item.Senior === "Mern") Mern
+                    option(value="JAVA", selected=item.Senior === "JAVA") Java
+                  select(name="newCity")#input
+                    option(value="Rabat", selected=item.City === "Rabat") Rabat
+                    option(value="Casablanca", selected=item.City === "Casablanca") Casablanca
+                  button.editBtn(type='submit') Done
+      a(href='/search') Back to Search
+
+      script(src="./client.js")
